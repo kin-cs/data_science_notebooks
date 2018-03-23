@@ -39,3 +39,8 @@ age_bins = np.arange(0, 80, 5)
 pd.cut(df['col_age'], age_bins, right=False)
 
 ```
+
+# Kaggle
+### Kernel Ref.
+
+- U-nets: https://www.kaggle.com/lscoelho/keras-u-net-lb-0-277-epochs-vsplit-thr
