@@ -38,6 +38,9 @@ df['col_A'].isnull()
 age_bins = np.arange(0, 80, 5)
 pd.cut(df['col_age'], age_bins, right=False)
 
+# unpacked multi items when using apply
+df[['sum', 'difference']] = df.apply(lambda row: pd.Series(add_subtract(row['a'], row['b'])), axis=1)
+
 ```
 
 # Kaggle
