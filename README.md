@@ -48,3 +48,11 @@ df[['sum', 'difference']] = df.apply(lambda row: pd.Series(add_subtract(row['a']
 ### Kernel Ref.
 
 - U-nets: https://www.kaggle.com/lscoelho/keras-u-net-lb-0-277-epochs-vsplit-thr
+
+## Avito
+
+### LightGBM hyper-parameter tuning
+- Optimization software: Hyperopt, scikit-optimize, spearmint...
+- num_leaves: more powerful it is
+- bagging_fraction: just like dropout
+- min_data_in_leaf: another regularization, quite good to enlarge it to regularization for avoiding overfitting
