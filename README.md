@@ -54,5 +54,6 @@ df[['sum', 'difference']] = df.apply(lambda row: pd.Series(add_subtract(row['a']
 ### LightGBM hyper-parameter tuning
 - Optimization software: Hyperopt, scikit-optimize, spearmint...
 - num_leaves: more powerful it is
-- bagging_fraction: just like dropout
+- bagging_fraction: just take part of the batch data to train
 - min_data_in_leaf: another regularization, quite good to enlarge it to regularization for avoiding overfitting
+- feature_fraction: just like dropout, very useful to set it like 0.5 (just like ensemble method)
