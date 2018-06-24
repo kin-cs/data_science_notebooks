@@ -42,6 +42,26 @@ pd.cut(df['col_age'], age_bins, right=False)
 # unpacked multi items when using apply
 df[['sum', 'difference']] = df.apply(lambda row: pd.Series(add_subtract(row['a'], row['b'])), axis=1)
 
+# rolling avg based on the previous data
+# https://stackoverflow.com/questions/28642511/how-to-apply-rolling-functions-in-a-group-by-object-in-pandas
+  df.index = [pd.to_datetime(str(x), format='%Y%m%d') for x in df.index]
+  df.reset_index(inplace=True)
+  def avg_3_days(x):
+          return df[(df['index'] >= x['index'] - pd.DateOffset(3)) & (df['index'] < x['index']) & (df['fruit'] == x['fruit'])].amount.mean()
+
+  df['res'] = df.apply(avg_3_days, axis=1)
+  df
+  ==result==
+         index   fruit  amount  res
+  0 2014-01-01   apple       3  NaN
+  1 2014-01-02   apple       5    3
+  2 2014-01-02  orange      10  NaN
+  3 2014-01-04  banana       2  NaN
+  4 2014-01-04   apple      10    4
+  5 2014-01-04  orange       4   10
+  6 2014-01-05  orange       6    7
+  7 2014-01-05   grape       1  NaN
+
 ```
 
 # Kaggle
