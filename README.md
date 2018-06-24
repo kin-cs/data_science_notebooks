@@ -44,13 +44,14 @@ df[['sum', 'difference']] = df.apply(lambda row: pd.Series(add_subtract(row['a']
 
 # rolling avg based on the previous data
 # https://stackoverflow.com/questions/28642511/how-to-apply-rolling-functions-in-a-group-by-object-in-pandas
-  df.index = [pd.to_datetime(str(x), format='%Y%m%d') for x in df.index]
-  df.reset_index(inplace=True)
-  def avg_3_days(x):
-          return df[(df['index'] >= x['index'] - pd.DateOffset(3)) & (df['index'] < x['index']) & (df['fruit'] == x['fruit'])].amount.mean()
+df.index = [pd.to_datetime(str(x), format='%Y%m%d') for x in df.index]
+df.reset_index(inplace=True)
+def avg_3_days(x):
+        return df[(df['index'] >= x['index'] - pd.DateOffset(3)) & (df['index'] < x['index']) & (df['fruit'] == x['fruit'])].amount.mean()
 
-  df['res'] = df.apply(avg_3_days, axis=1)
-  df
+df['res'] = df.apply(avg_3_days, axis=1)
+df
+'''
   ==result==
          index   fruit  amount  res
   0 2014-01-01   apple       3  NaN
@@ -61,6 +62,7 @@ df[['sum', 'difference']] = df.apply(lambda row: pd.Series(add_subtract(row['a']
   5 2014-01-04  orange       4   10
   6 2014-01-05  orange       6    7
   7 2014-01-05   grape       1  NaN
+'''
 
 ```
 
