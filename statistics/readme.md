@@ -25,7 +25,7 @@ From the course of **Probability and Statistics in Data Science using Python**
 - a function to find the parameter of Distr
 - Bias
   - its expected overestimate of theta ( mu - theta )
-  - no bias ( mu = theta
+  - no bias ( mu = theta )
 - Variance
 - Using MSE to check the performance of estimator
 
