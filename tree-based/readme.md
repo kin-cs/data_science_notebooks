@@ -24,8 +24,21 @@ Problem of one tree: You will have a large bias with simple trees and a large va
 ### Bagging (Bootstrap Aggregation)
 - it is used when our goal is to reduce the variance of a decision tree. Here idea is to create several subsets of data from training sample chosen randomly with replacement. (= ensembling trees with different subset)
 
-### Random Forest
+### Random Forest (Bagging + Randomly Feature selecting)
 - it is an extension over bagging. It takes one extra step where in addition to taking the random subset of data, it also takes the random selection of features rather than using all features to grow trees.
 
 ### Boosting
-...
+- When an input is misclassified by a hypothesis, its weight is increased so that next hypothesis is more likely to classify it correctly. By combining the whole set at the end converts weak learners into better performing model.
+
+### Gradient Boosting (Gradient Descent + Boosting)
+- It uses gradient descent algorithm which can optimize any differentiable loss function.
+
+**Advantages of using Gradient Boosting technique:**
+
+    Supports different loss function.
+    Works well with interactions.
+
+**Disadvantages of using Gradient Boosting technique:**
+
+    Prone to over-fitting.
+    Requires careful tuning of different hyper-parameters
