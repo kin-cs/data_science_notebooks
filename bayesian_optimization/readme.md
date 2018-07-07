@@ -17,4 +17,16 @@ Concepts
 4. update the surrogate model with **new results**
 5. repeat above until maximum round is met
 
+Various models & Libraries
+--------------
+
+### Surrogate Model (aka Response Surface)
+- Guanssian Processes [Library:  Spearmint and MOE]
+- Random Forest Regression [Library: SMAC]
+- Tree Parzen Estimation [Library: Hyperopt]
+
+### Selection Function
+- Expected Improvement (per second)
+
+
 
