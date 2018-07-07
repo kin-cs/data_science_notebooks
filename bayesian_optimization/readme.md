@@ -28,5 +28,6 @@ Various models & Libraries
 ### Selection Function
 - Expected Improvement (per second)
 
-
+### Notebooks
+- https://www.kaggle.com/eikedehling/tune-and-compare-xgb-lightgbm-rf-with-hyperopt
 
