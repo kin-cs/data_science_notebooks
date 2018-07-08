@@ -11,11 +11,15 @@ Concepts
 - Bayesian Optimization makes a probabilistic model (surrogate model) to simulate the actual objective function, which could be very computational expensive to run.
 
 ### Steps
-1. Build a **surrogate probabilistic** model for **objective function**
+1. Build a **surrogate probabilistic** model for **objective function**, in which the surrogate model should be a non-parametric model which would model any arbitrary complex model, and it also should be profitable for uncertainty.
 2. Find the best hyperparameters based on a **selection function (aka acquisition function)** in surrogate model within the **domain/range of hyperparametes**
 3. apply this hyperparameters in actual objective function
 4. update the surrogate model with **new results**
 5. repeat above until maximum round is met
+
+### Selection/Acquisition function
+- Exploration
+- Exploitation
 
 Various models & Libraries
 --------------
