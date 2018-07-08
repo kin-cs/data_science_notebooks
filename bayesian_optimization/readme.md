@@ -12,7 +12,7 @@ Concepts
 
 ### Steps
 1. Build a **surrogate probabilistic** model for **objective function**
-2. Find the best hyperparameters based on a **selection function** in surrogate model within the **domain/range of hyperparametes**
+2. Find the best hyperparameters based on a **selection function (aka acquisition function)** in surrogate model within the **domain/range of hyperparametes**
 3. apply this hyperparameters in actual objective function
 4. update the surrogate model with **new results**
 5. repeat above until maximum round is met
