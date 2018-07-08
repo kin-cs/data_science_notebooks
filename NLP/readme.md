@@ -20,4 +20,6 @@ FastText
 --------
 - supervised learning
 - linear model
+- Hierarchical Softmax
+  - Huffman Coding
 - have n-gram (so it has the order information)
