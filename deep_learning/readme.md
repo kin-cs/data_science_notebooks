@@ -18,4 +18,7 @@ Basic
 
 Cross-entropy
 -------------
-Cross-entropy loss function |is a better than >> mean squared loss function |better than>> classification Error
+The more ideal (top is the most ideal)
+- Cross-entropy loss function
+- mean squared loss function
+- classification Error
