@@ -11,3 +11,11 @@ Bayesian Optimization of hyper-paremeters
 - Random Combination
 
 - Guassian Process models
+
+
+Basic
+=====
+
+Cross-entropy
+-------------
+Cross-entropy loss function |is a better than >> mean squared loss function |better than>> classification Error
