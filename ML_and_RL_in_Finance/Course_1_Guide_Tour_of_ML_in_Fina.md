@@ -59,5 +59,5 @@ Big Picture
   - Inverse Reinforcement Learning
     - no info for reward
     - find the reward function that explains behavior
-![alt text](https://raw.githubusercontent.com/kin-cs/data_science_notebooks/master/ML_and_RL_in_Finance/imgs/Screen%20Shot%202018-07-16%20at%205.43.08%20PM.jpg?token=AZ9R99Mgd9FzePeWQ44gtESlX6H0DBRgks5bVaOgwA%3D%3D)
+![img](https://raw.githubusercontent.com/kin-cs/data_science_notebooks/master/ML_and_RL_in_Finance/imgs/Screen%20Shot%202018-07-16%20at%205.43.08%20PM.jpg?token=AZ9R99Mgd9FzePeWQ44gtESlX6H0DBRgks5bVaOgwA%3D%3D)
     
