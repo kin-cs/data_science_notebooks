@@ -60,4 +60,37 @@ Big Picture
     - no info for reward
     - find the reward function that explains behavior
 ![img](https://raw.githubusercontent.com/kin-cs/data_science_notebooks/master/ML_and_RL_in_Finance/imgs/Screen%20Shot%202018-07-16%20at%205.43.08%20PM.jpg?token=AZ9R99Mgd9FzePeWQ44gtESlX6H0DBRgks5bVaOgwA%3D%3D)
+![img](https://raw.githubusercontent.com/kin-cs/data_science_notebooks/master/ML_and_RL_in_Finance/imgs/Screen%20Shot%202018-07-16%20at%205.47.52%20PM.jpg?token=AZ9R98pMnuAuCEkEfss5WtmcygtM16u9ks5bVaVYwA%3D%3D)
+
+Machine Learning in Finance vs Machine Learning in Tech
+-------------------------------------------------------
+
+### ML in Finance 
+- Supervised (perception tasks)
+  - Regression
+    - earning prediction
+    - credit loss forecast
+    - algorithmic trading
+  - Classification
+    - rating prediction
+    - default modeling
+    - fraud detection
+    - anti-money laundry
+- Unsupervised (perception tasks)
+  - Clustering
+    - customer segmentation
+    - stock segmentation
+  - Representation Learning
+    - factor modeling
+    - de-noising
+    - regime change detection
+- Reinforcement Learning (action tasks)
+  - Optimization of strategy for a task
+    - trading strategy
+    - asset management
+  - Inverse Reinforcement Learning
+    - reverse engineering of consumer behavior
+    - trading strategy
     
+ML by Financial APplication Areas
+---------------------------------
