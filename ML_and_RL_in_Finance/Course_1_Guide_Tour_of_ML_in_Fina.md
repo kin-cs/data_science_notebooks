@@ -37,12 +37,27 @@ Big Picture
   - planning and forecasting the future
 #### Performance Measure P
 - Metric
-- we want to get the difficiative function
+  - we want to get the difficiate function
 #### Experience E
-- Supervised
+- Supervised (perception task)
+  - correct feedback from "teacher"
 - Unsupervised
-- Reinforcement'
--
+  - no "teacher
+- Reinforcement Learning
+  - only partial feedback (a reward)
 
-  
+#### ML Landscape
+- Supervised (perception tasks)
+  - Regression
+  - Classification
+- Unsupervised (perception tasks)
+  - Clustering
+  - Representation Learning
+    - feature extraction, dimension reduction
+- Reinforcement Learning (action tasks)
+  - Optimization of strategy for a task
+  - Inverse Reinforcement Learning
+    - no info for reward
+    - find the reward function that explains behavior
+![alt text](https://raw.githubusercontent.com/kin-cs/data_science_notebooks/master/ML_and_RL_in_Finance/imgs/Screen%20Shot%202018-07-16%20at%205.43.08%20PM.jpg?token=AZ9R99Mgd9FzePeWQ44gtESlX6H0DBRgks5bVaOgwA%3D%3D)
     
