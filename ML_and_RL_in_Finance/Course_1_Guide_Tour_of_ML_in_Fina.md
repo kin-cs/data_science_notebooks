@@ -16,5 +16,33 @@ Big Picture
 - The goal of learning is the ability to generalize from data
 - Statistical Modeling VS Machine Learning
   - Statistical Modeling:
-    - try to explain the world, focus on moedling causality
+    - Parametric model: try to **explain** the world, focus on modeling causality
+    - Deduce relations
+    - Small data (1-100 features, 100-1000 samples)
+    - based on probabilistic approach
+  - ML:
+    - Non-parametric model: try to **mimic** the world (rather than explain it). Often use correlations as proxies to causality.
+    - Induce
+    - large data
+    - not probabilistic
+    
+#### Tasks T
+- Perception Tasks
+  - perception and learning from data
+  - fixed action
+  - outputs: learned fucntion of data
+- Action Tasks
+  - multiple possible actions
+  - involve sub-tasks
+  - planning and forecasting the future
+#### Performance Measure P
+- Metric
+- we want to get the difficiative function
+#### Experience E
+- Supervised
+- Unsupervised
+- Reinforcement'
+-
+
+  
     
