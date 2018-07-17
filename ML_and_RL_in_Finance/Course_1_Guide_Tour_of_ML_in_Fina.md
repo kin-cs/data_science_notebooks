@@ -92,5 +92,19 @@ Machine Learning in Finance vs Machine Learning in Tech
     - reverse engineering of consumer behavior
     - trading strategy
     
-ML by Financial APplication Areas
+ML by Financial Application Areas
 ---------------------------------
+
+### Banking
+- Retail P2P Leanding
+- Commercial & Investment
+...
+### Asset Management
+...
+### Quantitative Trading
+- Optimal trade execution
+  - Profit-maximizing trade execution
+- Quantitative trading strategies
+  - Earning prediction (regression)
+  - Algo trading
+  - Optimal market making (RL)
