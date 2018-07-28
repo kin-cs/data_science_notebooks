@@ -108,3 +108,29 @@ ML by Financial Application Areas
   - Earning prediction (regression)
   - Algo trading
   - Optimal market making (RL)
+
+Fundamental Analysis
+--------------------
+- accounting information
+  - income statements
+    - sales/revenues
+    - cost of goods sold
+    - sales, general and admin expenses
+    - operating income after depreciation
+    - net income
+    - capital expenditures
+    - dividends
+    - common shares outstanding
+    - price per share
+  - balance sheet
+    - cash & cash equivalents
+    - receivables
+    - current assets
+    - total assets
+    - current liabilities
+    - total liabilities
+    - long-term debt
+    - preferred stocks
+    - shareholders equity
+### Forecasting EPS
+  - 
