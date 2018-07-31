@@ -78,7 +78,7 @@ The concept is to train a good autoencoder for normal transaction, make the reco
   - https://www.analyticsvidhya.com/blog/2018/02/natural-language-processing-for-beginners-using-textblob/
   - language translation and detection which is powered by Google Translate
   - Sentiment Analysis
-- Sairen - OpenAI Gym Reinforcement Learning Environment for the Stock Market
+- **Sairen** - OpenAI Gym Reinforcement Learning Environment for the Stock Market (real-time)
 - Quandl
 - Numerai
   - data science competition in Finance
