@@ -1,7 +1,7 @@
 Medicial
 ========
 
-### Main areas
+### applications
 - diagnosis
 - interpreting patient medical records
 - drug discovery (e.g. AtomNet, ChemGAN)
@@ -13,8 +13,9 @@ Medicial
   - cancer detection
 
 ### Knowledge
-- using autoencoder
+- using adversarial autoencoder (AAE)
   - learn latent representation
+- using Tensorflow Serving for deployment
 
 Marketing
 =========
