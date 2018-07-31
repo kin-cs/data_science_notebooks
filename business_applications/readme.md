@@ -25,6 +25,23 @@ Marketing
   - real-time optimization content
 - audience targeting (analyzing data and scoring them)
 
+### example companies:
+- appier
+- insidesales
+- **persado**: help you find the phrases and words which drive the better action for the audience
+  - identify the language and emotions that resonate with consumers to increase engagement and build 
+
+### Methods:
+- Recommendation System for Audience Targeting
+  - use LightFM
+  - use TensorRec
+- Content Creation
+  - use LSTM
+- Chatbot
+  - using it in FB Messager, Telegram
+
+
+
 
 Finance
 =======
@@ -52,7 +69,7 @@ Data Points to Use:
 - All sorts of social media, blog posts
 - All sorts of financial metadata (dividends, financial reports, etc)
 
-Possible Methods:
+### Possible Methods:
 - linear regression
 - SVM
 - NN
