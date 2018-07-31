@@ -30,7 +30,6 @@ Finance
 =======
 
 Ref
----
 - Stock Price Prediction | AI in Finance - https://www.youtube.com/watch?v=7vunJlqLZok&list=PL2-dafEMk2A6oABirZ1Ug805Ag-8W54rN&index=3
   - [**IMPORTANT**] AI in Finance Notebook:  https://github.com/llSourcell/AI_in_Finance/blob/master/Market%20Prediction.ipyn
 
@@ -53,20 +52,33 @@ Data Points to Use:
 - All sorts of social media, blog posts
 - All sorts of financial metadata (dividends, financial reports, etc)
 
-Methods:
+Possible Methods:
 - linear regression
 - SVM
 - NN
 - RL
   - https://doctorj.gitlab.io/sairen/
+  
+Fraud Prevention
+----------------
+ref: https://www.youtube.com/watch?v=UNgdIkuVC6g&list=PL2-dafEMk2A6oABirZ1Ug805Ag-8W54rN&index=4
+[**important**] - https://medium.com/@curiousily/credit-card-fraud-detection-using-autoencoders-in-keras-tensorflow-for-hackers-part-vii-20e0c85301bd
+
+### Using autoencoder for fraud detection
+The concept is to train a good autoencoder for normal transaction, make the reconstruction error as low as possible. Then try to put the fradulent transactions into this autoencoder, this time the reconstruction error would be high, so that we can set a threshold to determine the fradulent transactions from the normal ones.
+
+### examples companies:
+- Jumio: face verification
+- BioCatch: e.g. auto detect the machine input
+
+
 
 ### knowledge
 - **TextBlob**: NLP tool, based on NLTK
   - https://www.analyticsvidhya.com/blog/2018/02/natural-language-processing-for-beginners-using-textblob/
   - language translation and detection which is powered by Google Translate
   - Sentiment Analysis
-
-
-
+- Sairen - OpenAI Gym Reinforcement Learning Environment for the Stock Market
+- Quandl
 - Numerai
   - data science competition in Finance
