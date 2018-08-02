@@ -1,4 +1,4 @@
-Classification
+Classification Metrics
 ==============
 
 Accuracy
@@ -19,3 +19,24 @@ Log Loss (for probability score)
 
 AUC (for probability score)
 --------------------------
+
+Classification Report in SKlearn
+-------------------------------
+```python
+from sklearn.metrics import classification_report
+```
+
+Regression Metrics
+==================
+
+MSE
+---
+
+RMSE
+----
+
+MAE
+---
+
+R^2 Metric
+----------
