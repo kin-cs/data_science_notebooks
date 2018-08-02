@@ -3,7 +3,7 @@ Classification
 
 Accuracy
 --------
-[!img](https://wikimedia.org/api/rest_v1/media/math/render/svg/be4377041f6e6226f0235bcc163db409f146090f)
+![img](https://wikimedia.org/api/rest_v1/media/math/render/svg/be4377041f6e6226f0235bcc163db409f146090f)
 
 
 Confusion Matrics (for discrete counting true/false)
