@@ -1,0 +1,3 @@
+- Pricing Calculator
+- Cloud Launcher
+  - deploy the pre-installed things
