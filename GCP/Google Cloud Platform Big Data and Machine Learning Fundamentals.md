@@ -2,7 +2,10 @@ Keys
 ===
 
 - Read the details here in **https://cloud.google.com/solutions/**
+- Security: **https://cloud.google.com/security/**
 
+Misc
+====
 - Pricing Calculator
 - Cloud Launcher
   - deploy the pre-installed things
