@@ -4,6 +4,12 @@ Keys
 - Read the details here in **https://cloud.google.com/solutions/**
 - Security: **https://cloud.google.com/security/**
 
+Datastore
+---
+- Cloud Datastore: NoSQL, is not a relational database, and it is not an effective storage solution for analytic data
+
+
+
 Misc
 ====
 - Pricing Calculator
