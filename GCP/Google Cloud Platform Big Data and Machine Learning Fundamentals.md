@@ -31,3 +31,23 @@ Service:
 -------
 - DATAPROC: fully-managed cloud service for running Apache Spark and Apache Hadoop clusters in a simpler, more cost-efficient way
 - Cloud SQL: for not so large data (GB)
+
+Labs I've gone through
+=====================
+
+Create ML Dataset with BigQuery
+--------
+
+- Use BigQuery and Datalab to explore and visualize data
+- Build a Pandas dataframe that will be used as the training dataset for machine learning using TensorFlow
+
+### Launch Cloud Datalab
+In Cloud Shell, type:
+
+```gcloud compute zones list```
+Pick a zone in a geographically closeby region.
+
+In Cloud Shell, type:
+
+```datalab create bdmlvm --zone <ZONE>```
+
