@@ -51,3 +51,20 @@ In Cloud Shell, type:
 
 ```datalab create bdmlvm --zone <ZONE>```
 
+
+Lab Exercises
+===
+
+Course 2 - Dataproc
+-------------------
+
+### Lab 1: Create a Dataproc Cluster
+
+- Prepare a bucket for cluster initialization
+- Create a Dataproc Hadoop Cluster customized to use the Google Cloud API
+- Enable secure access to the Dataproc cluster
+- Explore Hadoop operations
+
+- Create the source file for setting and resetting environment variables
+
+- ports 8088 (Hadoop Job Interface) and 9870 (Hadoop Admin interface)
