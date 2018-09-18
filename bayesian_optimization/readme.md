@@ -1,6 +1,18 @@
 Bayesian Optimization
 ====================
 
+Background
+----------
+
+There are 2 levels of searching for hyperparameters
+#### Level 1
+- (Don't use) Grid Search.
+	- Reason: it wastes so much time on the parameters which don't have any effect for the model
+
+#### Level 2
+- Random Combination
+- Guassian Process models
+
 ### Reference:
 - Good lecture note: https://www.iro.umontreal.ca/~bengioy/cifar/NCAP2014-summerschool/slides/Ryan_adams_140814_bayesopt_ncap.pdf
 - Clear concept: https://towardsdatascience.com/a-conceptual-explanation-of-bayesian-model-based-hyperparameter-optimization-for-machine-learning-b8172278050f

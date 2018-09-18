@@ -41,8 +41,6 @@ Marketing
   - using it in FB Messager, Telegram
 
 
-
-
 Finance
 =======
 

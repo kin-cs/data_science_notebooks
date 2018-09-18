@@ -1,3 +1,6 @@
+Course 1 - Google Cloud Platform Big Data and Machine Learning Fundamentals
+===========================================================================
+
 Keys
 ===
 
@@ -7,8 +10,6 @@ Keys
 Datastore
 ---
 - Cloud Datastore: NoSQL, is not a relational database, and it is not an effective storage solution for analytic data
-
-
 
 Misc
 ====
@@ -55,8 +56,8 @@ In Cloud Shell, type:
 Lab Exercises
 ===
 
-Course 2 - Dataproc
--------------------
+Course 2 - Dataproc, Leveraging Unstructured Data with Cloud Dataproc on Google Cloud Platform
+===================
 
 ### Lab 1: Create a Dataproc Cluster
 
@@ -70,8 +71,9 @@ Course 2 - Dataproc
 - ports 8088 (Hadoop Job Interface) and 9870 (Hadoop Admin interface)
 
 
-Course 3 - BigQuery
--------------------
+Course 3 - BigQuery & Dataflow, Serverless Data Analysis with Google BigQuery and Cloud Dataflow
+===================
+
 - SQL example
 ```sql
 WITH

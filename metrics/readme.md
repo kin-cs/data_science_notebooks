@@ -9,7 +9,6 @@ Accuracy
 Confusion Matrics (for discrete counting true/false)
 -----------------
 
-
 True Positive Rate/Accuracy: Recall/Sensitivity  
 True Negative Rate/Accuracy: Specificity  
 Positive Predictive Value: Percision
