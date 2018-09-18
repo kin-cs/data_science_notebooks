@@ -6,6 +6,8 @@
     - Birth event (e.g. joining the program, join the insurance)
     - Death event (e.g. leaving the program, claim (heavily) for this policy)
     - Probability of surviving
+    - For anything we can't capture 'death event', that is censored event.
+    - For anything we capture 'death event', we call it uncensored/observed.
       - Survival Curve
         - T: lifetime (death/leave/big claim) of a member of the population
         - t: that time
