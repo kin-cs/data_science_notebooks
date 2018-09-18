@@ -70,7 +70,7 @@ Data cleaning
 -------------
 - drop_duplicate()
 - check if dataset is shuffled (using rolling avg of the target value)
-![alt text](https://github.com/kin-cs/courses/raw/master/How%20to%20Win%20a%20Data%20Science%20Competition-%20Learn%20from%20Top%20Kagglers/img/2018-06-25_15-51-56.jpg)
+![alt text](https://raw.githubusercontent.com/kin-cs/data_science_notebooks/master/How%20to%20Win%20a%20Data%20Science%20Competition-%20Learn%20from%20Top%20Kagglers/img/2018-06-25_15-51-56.jpg?token=AZ9R98NEM-Gu7eovx-INy2lOobFJ72Ekks5bqmNvwA%3D%3D)
 
 Validation
 ------------
