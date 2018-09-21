@@ -111,7 +111,7 @@ Dataflow
 -------
 
 - the MapReduce process should be commutative & associative
-  - using **yield** and **flatMap** iare very important for doing this process in Python
+  - using **yield** and **FlatMap** iare very important for doing this process in Python
 
 ### Lab 1
 - Simple data pipeline in Python
@@ -136,4 +136,6 @@ def my_grep(line, term):
 - beam.Combine.perKey(sum)
 
 ### Lab 2
-Typical example of count every value as a tuple (key, 1), then use Combine.perKey(sum) to count the word/term
+- Typical example of count every value as a tuple (key, 1), then use Combine.perKey(sum) to count the word/term
+https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/data_analysis/lab2/python/is_popular.py
+
