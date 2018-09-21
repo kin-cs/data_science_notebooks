@@ -114,7 +114,7 @@ Dataflow
 - Simple data pipeline in Python
 https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/data_analysis/lab2/python/grepc.py
 
-- using a function with **yield** to make a filyter
+- using a function with **yield** to make a filter
 ```python
 def my_grep(line, term):
    if line.startswith(term):
@@ -127,3 +127,7 @@ def my_grep(line, term):
   | 'write' >> beam.io.WriteToText(output_prefix)
 )
 ```
+
+### GroupBy and Combine
+- beam.GroupByKey()
+- beam.Combine.perKey(sum)
