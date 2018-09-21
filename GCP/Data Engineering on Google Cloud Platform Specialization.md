@@ -106,3 +106,24 @@ HAVING
 ORDER BY
   numcommits DESC
 ```
+
+Dataflow
+-------
+
+### Lab 1
+- Simple data pipeline in Python
+https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/data_analysis/lab2/python/grepc.py
+
+- using a function with **yield** to make a filyter
+```python
+def my_grep(line, term):
+   if line.startswith(term):
+      yield line
+## ...
+# find all lines that contain the searchTerm
+(p
+  | 'GetJava' >> beam.io.ReadFromText(input)
+  | 'Grep' >> beam.FlatMap(lambda line: my_grep(line, searchTerm) )
+  | 'write' >> beam.io.WriteToText(output_prefix)
+)
+```
