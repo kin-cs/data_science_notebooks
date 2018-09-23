@@ -168,4 +168,13 @@ some revisit
   - ```gcloud compute zones list``` choose a zone, then
   - ```datalab create dataengvm --zone <ZONE>```
   - it will take ~ 5 mins to start
-- 
+https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/datasets/create_datasets.ipynb
+- use ```%sql --model <name of query>``` to create the query: example
+```
+%sql --module afewrecords
+SELECT pickup_datetime, pickup_longitude, pickup_latitude, dropoff_longitude,
+dropoff_latitude, passenger_count, trip_distance, tolls_amount, 
+fare_amount, total_amount FROM [nyc-tlc:yellow.trips] LIMIT 10
+```
+- then use bq (import datalab.bigquery as bq) to read it as the pandas' df
+```trips = bq.Query(afewrecords).to_dataframe()```
