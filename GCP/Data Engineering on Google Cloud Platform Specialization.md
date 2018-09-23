@@ -139,3 +139,33 @@ def my_grep(line, term):
 - Typical example of count every value as a tuple (key, 1), then use Combine.perKey(sum) to count the word/term
 https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/data_analysis/lab2/python/is_popular.py
 
+Course 4 - ML & TF in GCP
+========================
+
+some revisit
+------------
+
+### Misc:
+- Try play around playground for TF
+- get some negative/near samples to train a better model
+
+### Metrics:
+- For model training
+  - Regression model: MSE, RMSE
+  - Classification model: cross-entropy (=log loss)
+- For performance (for presenting to stakeholders:
+
+### Typical Procedure of a ML project
+1. Explore
+2. Create datasets for modeling
+3. Benchmark
+  - use confusion matrix
+    - precision
+    - recall
+
+### Lab 1
+- Using datalab
+  - ```gcloud compute zones list``` choose a zone, then
+  - ```datalab create dataengvm --zone <ZONE>```
+  - it will take ~ 5 mins to start
+- 
