@@ -222,3 +222,11 @@ https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses
   2. create input_function (it also indicate x(whole data, with y) and y(the label)
   3. choose LinearRegressor/LinearClassifier/DNNRegressor... and build the model
 
+### Lab 3 - Use estimator
+https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/tensorflow/b_estimator.ipynb
+
+### Handle very large sharded csv files, directly (not through pandas)
+- use TetLineDataset and decode_csv
+
+### Lab 4 - Use TetLineDataset and decode_csv to read csv directly, as a batch
+https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/tensorflow/c_batched.ipynb
