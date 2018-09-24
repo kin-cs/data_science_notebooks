@@ -158,6 +158,13 @@ some revisit
 ### Typical Procedure of a ML project
 1. Explore
 2. Create datasets for modeling
+  - regression/classification
+  - what is the label?
+  - what are the features?
+  - ML steps:
+    - train the model 
+    - evaluate the model (with validation set)
+    - predict the model (with unseen test set)
 3. Benchmark
   - use confusion matrix
     - precision
@@ -178,3 +185,40 @@ fare_amount, total_amount FROM [nyc-tlc:yellow.trips] LIMIT 10
 ```
 - then use bq (import datalab.bigquery as bq) to read it as the pandas' df
 ```trips = bq.Query(afewrecords).to_dataframe()```
+
+Tensorflow (revisit)
+------------------
+
+- lazy evaluation: so it separates the creation of the graphs with the execution
+```python
+# buil
+...
+c = tf.add(a, b)
+
+# run (lazy evaluation)
+session = tf.Session()
+numpy_c = session.run(c, feed_dict= ...)
+```
+- placeholder & feed_dict : as its name
+```python
+
+aa  ==  tftf..placeholderplaceho (dtype=tf.int32, shape=(None,))  # batchsize x scalar
+b = tf.placeholder(dtype=tf.int32, shape=(None,))
+c = tf.add(a, b)
+with tf.Session() as sess:
+  result = sess.run(c, feed_dict={
+      a: [3, 4, 5],
+      b: [-1, 2, 3]
+    })
+  print(result)
+## result > [2 6 8]
+```
+
+### Lab 2 - TF
+https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/tensorflow/a_tfstart.ipynb
+
+- Estimator API
+  1. create feature_columns
+  2. create input_function (it also indicate x(whole data, with y) and y(the label)
+  3. choose LinearRegressor/LinearClassifier/DNNRegressor... and build the model
+
