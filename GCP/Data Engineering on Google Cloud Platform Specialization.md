@@ -1,3 +1,13 @@
+Data Engineering on Google Cloud Platform Specialization
+=======================================================
+There are 5 courses here:
+1. GCP BD & ML Fundamentals
+2. Leveraging Unstructured Data with Cloud Dataproc on GCP
+3. Serverless Data Analysis with Google BigQuery and Cloud Dataflow
+4. Serverless ML with Tensorflow on GCP
+5. Building Resilient Streaming Systems on GCP
+
+
 Course 1 - Google Cloud Platform Big Data and Machine Learning Fundamentals
 ===========================================================================
 
@@ -230,3 +240,6 @@ https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses
 
 ### Lab 4 - Use TetLineDataset and decode_csv to read csv directly, as a batch
 https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/machine_learning/tensorflow/c_batched.ipynb
+
+### Lab 5 - Distributed training and monitoring
+
