@@ -243,3 +243,36 @@ https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses
 
 ### Lab 5 - Distributed training and monitoring
 
+- use tf.estimator.train_and_evaluate
+	- add an esitmator
+	- add a TrainSpec ```tf.estimator.TrainSpec```
+	- add evaluation in training loop: ```tf.estimator.EvalSpec```
+	- add the exporter
+- use tensorboard
+
+### ML Engine at scale
+
+- Okay model with large amount of data is better than a great model with small amount of data
+- Google emphasize 'scaling out' rather than 'scaling up'
+
+### Standardized Processes of ML implementation and deployment
+
+1. Inputs
+2. Pre-processing
+3. Feature engineering
+4. Train model (and repetative hyperparameter tuning)
+5. Model ready
+6. (deploy in) Web application
+7. (talking via REST API) to clients. **while this inputs need to be the same as the Inputs in the beginning, means the pre-processing here would be the same as before for prediction time**
+
+- We need to handle "Training Serving Skew", that means the training time distribution is not the same as the serving time when time passed by.
+
+
+### Training model in Cloud ML Engine
+Step 1 - Use TF to create training application
+Step 2 - Package it (probably in Python)
+Step 3 - Configure it and start as a Cloud ML Engine job
+- there will be:
+	- task.py
+	- model.py
+	- and more (ref demo package: https://github.com/GoogleCloudPlatform/training-data-analyst/tree/master/courses/machine_learning/cloudmle) 
