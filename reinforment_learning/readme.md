@@ -6,4 +6,5 @@ DQN
 - we need to create the datasets with X & Y for training a Q network
   - X: we will use a initialized Q network to play the game, many times, with ϵ-greedy. Then the rollouts would be saved as replay buffer.
   Then we will use the (s, a, s', r) as the X
-  - Y: y = r + γ Q(phi(s'), a')
+  - Y: y = r + γ Q(φ(s'), a')
+    - where φ function is a vector representation of state (e.g. current and 3 previous frames on screen)
