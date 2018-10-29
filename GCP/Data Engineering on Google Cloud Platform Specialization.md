@@ -298,4 +298,6 @@ Dataflow
 - Dataflow is a gully-managed, autoscaling execution environment for Beam pipelines
 
 ### Challenges in stream processing
+- traffic pattern varies (some highs some lows)
+- arriving time is different for each data (with same event-time)
 
