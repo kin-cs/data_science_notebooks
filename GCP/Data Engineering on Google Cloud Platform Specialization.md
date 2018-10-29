@@ -276,3 +276,26 @@ Step 3 - Configure it and start as a Cloud ML Engine job
 	- task.py
 	- model.py
 	- and more (ref demo package: https://github.com/GoogleCloudPlatform/training-data-analyst/tree/master/courses/machine_learning/cloudmle) 
+
+
+Course 5 - Building Resilient Streaming Systems on Google Cloud Platform
+=================
+
+Pub/Sub
+------
+
+
+Dataflow
+-------
+
+- Problem: aggregation and composite on unbounded data is hard
+	- e.g. continuously arriving data can come out of order
+	- Use 2 piplines to balance latency, throughput and fault tolerance
+		- Speed layer (streaming)
+		- Batch layer
+- Using Dataflow as an execution framework that runs Apache Beam pipelines. (Beam can also be run in Spark or Flink or else)
+	- it uses "Windowing" (**based on the (published) timestamp** - event time) to process the data
+- Dataflow is a gully-managed, autoscaling execution environment for Beam pipelines
+
+### Challenges in stream processing
+
