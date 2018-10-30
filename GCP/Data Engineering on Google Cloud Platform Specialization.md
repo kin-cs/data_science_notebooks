@@ -310,3 +310,12 @@ Dataflow
 - using **Watermark** for recalculating the late coming data.
 	- it learns the late coming data's pattern.
 
+Lab 2
+----
+- Monitoring: Stackdriver
+
+Lab 3
+---
+- DataStudio
+	- import BigQuery table in it
+	- create the charts
