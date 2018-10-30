@@ -283,7 +283,8 @@ Course 5 - Building Resilient Streaming Systems on Google Cloud Platform
 
 Pub/Sub
 ------
-
+- doesn't guarantee order of messages
+- at-least-once delivery means that repeated delivery is possible
 
 Dataflow
 -------
@@ -300,4 +301,12 @@ Dataflow
 ### Challenges in stream processing
 - traffic pattern varies (some highs some lows)
 - arriving time is different for each data (with same event-time)
+
+#### Apache Beam
+- steam / micro batch / batch
+- hi / low latency
+
+### Example - Traffic sensors on a freeway
+- using **Watermark** for recalculating the late coming data.
+	- it learns the late coming data's pattern.
 
