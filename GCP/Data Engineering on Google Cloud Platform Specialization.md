@@ -312,10 +312,14 @@ Dataflow
 
 Lab 2
 ----
-- Monitoring: Stackdriver
+### Monitoring: Stackdriver
 
 Lab 3
 ---
-- DataStudio
+### DataStudio
 	- import BigQuery table in it
 	- create the charts
+
+![img](imgs/choose_gcp_storage.jpg)
+ 
+
