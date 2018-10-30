@@ -321,5 +321,13 @@ Lab 3
 	- create the charts
 
 ![img](imgs/choose_gcp_storage.jpg)
- 
+
+Cloud Spanner
+-------
+- horizontally expand SQL (Faster than Cloud SQL, for putting more nodes) 
+
+BigTable
+------
+- Good for time-series data
+- Good for Terabyte-data
 
