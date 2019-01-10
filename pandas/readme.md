@@ -65,4 +65,8 @@ df
   7 2014-01-05   grape       1  NaN
 '''
 
+# Fill na in categorical columns
+df['some_col'] = df['some_col'].cat.add_categories(['new_dummy_cat'])
+df['some_col'].fillna('new_dummy_cat')
+
 ```
