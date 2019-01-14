@@ -1,4 +1,7 @@
 ```python
+import google.datalab.storage as storage
+import pandas as pd
+from io import BytesIO
 
 # For reading the data from Cloud Storage
 mybucket = storage.Bucket('bucket_name')
