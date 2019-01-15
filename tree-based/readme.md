@@ -26,6 +26,8 @@ Problem of one tree: You will have a large bias with simple trees and a large va
 
 ### Random Forest (Bagging + Randomly Feature selecting)
 - it is an extension over bagging. It takes one extra step where in addition to taking the random subset of data, it also takes the random selection of features rather than using all features to grow trees.
+- Best Code Tutorial (with RandomizedSearchCV):
+  - https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
 
 ### Boosting
 - When an input is misclassified by a hypothesis, its weight is increased so that next hypothesis is more likely to classify it correctly. By combining the whole set at the end converts weak learners into better performing model.
