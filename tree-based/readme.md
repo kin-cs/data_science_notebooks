@@ -30,21 +30,16 @@ Problem of one tree: You will have a large bias with simple trees and a large va
   - https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
 - Code Highlights:
 ```python
-{'bootstrap': True, # bagging
+# model parameters
+{'bootstrap': True, # use bagging
 'max_depth': None, # confine the max depth
-'max_features': 'auto',  # confine the max features to conside
-'max_leaf_nodes': None,  
-'min_impurity_decrease': 0.0,
-'min_impurity_split': None,
+'max_features': 'auto',  # confine the max features to consider
 'min_samples_leaf': 1,
 'min_samples_split': 2,
-'min_weight_fraction_leaf': 0.0,
 'n_estimators': 200, # ** num of trees
-'n_jobs': -1, # parallellization of CPU
+'n_jobs': -1, # -1 means using all CPUs
 'oob_score': True, # use out of bag
-'random_state': 42,
-'verbose': 0,
-'warm_start': False}
+'warm_start': False} # using the previous trained forest parameter
 ```
 
 ### Boosting
