@@ -29,7 +29,7 @@ Problem of one tree: You will have a large bias with simple trees and a large va
 - Best Code Tutorial (with RandomizedSearchCV):
   - https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
 - Code Highlights:
-  - ```python
+  ```python
   {'bootstrap': True, # bagging
  'max_depth': None, # confine the max depth
  'max_features': 'auto',  # confine the max features to conside
