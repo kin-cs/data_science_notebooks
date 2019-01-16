@@ -29,23 +29,23 @@ Problem of one tree: You will have a large bias with simple trees and a large va
 - Best Code Tutorial (with RandomizedSearchCV):
   - https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
 - Code Highlights:
-  ```python
-  {'bootstrap': True, # bagging
- 'max_depth': None, # confine the max depth
- 'max_features': 'auto',  # confine the max features to conside
- 'max_leaf_nodes': None,  
- 'min_impurity_decrease': 0.0,
- 'min_impurity_split': None,
- 'min_samples_leaf': 1,
- 'min_samples_split': 2,
- 'min_weight_fraction_leaf': 0.0,
- 'n_estimators': 200, # ** num of trees
- 'n_jobs': -1, # parallellization of CPU
- 'oob_score': True, # use out of bag
- 'random_state': 42,
- 'verbose': 0,
- 'warm_start': False}
-  ```
+```python
+{'bootstrap': True, # bagging
+'max_depth': None, # confine the max depth
+'max_features': 'auto',  # confine the max features to conside
+'max_leaf_nodes': None,  
+'min_impurity_decrease': 0.0,
+'min_impurity_split': None,
+'min_samples_leaf': 1,
+'min_samples_split': 2,
+'min_weight_fraction_leaf': 0.0,
+'n_estimators': 200, # ** num of trees
+'n_jobs': -1, # parallellization of CPU
+'oob_score': True, # use out of bag
+'random_state': 42,
+'verbose': 0,
+'warm_start': False}
+```
 
 ### Boosting
 - When an input is misclassified by a hypothesis, its weight is increased so that next hypothesis is more likely to classify it correctly. By combining the whole set at the end converts weak learners into better performing model.
