@@ -33,13 +33,15 @@ Problem of one tree: You will have a large bias with simple trees and a large va
 # model parameters
 {'bootstrap': True, # use bagging
 'max_depth': None, # confine the max depth
-'max_features': 'auto',  # confine the max features to consider
+'max_features': 'auto',  # ** confine the max features to consider in every tree
 'min_samples_leaf': 1,
 'min_samples_split': 2,
 'n_estimators': 200, # ** num of trees
 'n_jobs': -1, # -1 means using all CPUs
 'oob_score': True, # use out of bag
 'warm_start': False} # using the previous trained forest parameter
+
+# ref: https://stackoverflow.com/questions/20463281/how-do-i-solve-overfitting-in-random-forest-of-python-sklearn
 ```
 
 ### Boosting
