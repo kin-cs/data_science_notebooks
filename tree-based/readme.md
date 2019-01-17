@@ -33,7 +33,7 @@ Problem of one tree: You will have a large bias with simple trees and a large va
 # model parameters
 {'bootstrap': True, # use bagging
 'max_depth': None, # confine the max depth
-'max_features': 'auto',  # ** confine the max features to consider in every tree
+'max_features': 'auto',  # ** confine the max features to consider in every tree, without setting this value, the RF in sklearn is only a simply a group of bagging trees.
 'min_samples_leaf': 1,
 'min_samples_split': 2,
 'n_estimators': 200, # ** num of trees
