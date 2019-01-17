@@ -43,6 +43,8 @@ Problem of one tree: You will have a large bias with simple trees and a large va
 
 # ref: https://stackoverflow.com/questions/20463281/how-do-i-solve-overfitting-in-random-forest-of-python-sklearn
 ```
+- Pitfall of features importance in Sciki-learn
+  - https://medium.com/turo-engineering/how-not-to-use-random-forest-265a19a68576
 
 ### Boosting
 - When an input is misclassified by a hypothesis, its weight is increased so that next hypothesis is more likely to classify it correctly. By combining the whole set at the end converts weak learners into better performing model.
