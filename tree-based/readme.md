@@ -28,6 +28,8 @@ Problem of one tree: You will have a large bias with simple trees and a large va
 - it is an extension over bagging. It takes one extra step where in addition to taking the random subset of data, it also takes the random selection of features rather than using all features to grow trees.
 - Best Code Tutorial (with RandomizedSearchCV):
   - https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74
+- Best Explanation of what Random Forest is and all the terms:
+  - https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76
 - Code Highlights:
 ```python
 # model parameters
