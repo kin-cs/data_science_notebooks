@@ -5,6 +5,7 @@ Some API tutorial
 - Simple examples:
   - https://hackernoon.com/deploy-a-machine-learning-model-using-flask-da580f84e60c
   - https://medium.freecodecamp.org/a-beginners-guide-to-training-and-deploying-machine-learning-models-using-python-48a313502e5a
+  - https://towardsdatascience.com/deploying-a-machine-learning-model-as-a-rest-api-4a03b865c166
 - Make Jupyter Notebook to consume the API call:
   - https://ndres.me/post/jupyter-notebook-rest-api/
 
