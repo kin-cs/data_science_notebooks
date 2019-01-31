@@ -1,7 +1,9 @@
 Some API tutorial
 ===
 
-- Basic Linear Regression model with simple preprocessing with prediction input: https://www.datacamp.com/community/tutorials/machine-learning-models-api-python
+- Basic Linear Regression model with simple preprocessing with prediction input:
+  - blog: https://www.datacamp.com/community/tutorials/machine-learning-models-api-python
+  - code: https://github.com/amirziai/sklearnflask/blob/master/main.py
 - Simple examples:
   - https://hackernoon.com/deploy-a-machine-learning-model-using-flask-da580f84e60c
   - https://medium.freecodecamp.org/a-beginners-guide-to-training-and-deploying-machine-learning-models-using-python-48a313502e5a
