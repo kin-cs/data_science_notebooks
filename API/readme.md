@@ -6,8 +6,14 @@ Some API tutorial
   - https://hackernoon.com/deploy-a-machine-learning-model-using-flask-da580f84e60c
   - https://medium.freecodecamp.org/a-beginners-guide-to-training-and-deploying-machine-learning-models-using-python-48a313502e5a
   - https://towardsdatascience.com/deploying-a-machine-learning-model-as-a-rest-api-4a03b865c166
+- Video mid-level example:
+  - https://www.youtube.com/watch?v=-UYyyeYJAoQ
 - Make Jupyter Notebook to consume the API call:
   - https://ndres.me/post/jupyter-notebook-rest-api/
+  
+### Notes:
+- flask’s inbuilt server is not suitable for production as it doesn’t scale well. You’ll need to use a WSGI server to run your flask application. eg. gunicorn, uwsgi.
+
 
 Production Concept
 ===
