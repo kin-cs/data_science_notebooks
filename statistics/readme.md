@@ -33,3 +33,8 @@ Correlation (r)
 ---------------
 - Pearson (
 - Spearman
+
+Statistical models
+------------------
+- General additive model
+  - https://datascienceplus.com/generalized-additive-models/
