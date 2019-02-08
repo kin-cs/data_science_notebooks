@@ -14,6 +14,7 @@ Some API tutorial
   - https://medium.com/analytics-vidhya/how-to-deploy-machine-learning-models-using-flask-docker-and-google-cloud-platform-gcp-6e7bf1b339d5
 - Make Jupyter Notebook to consume the API call:
   - https://ndres.me/post/jupyter-notebook-rest-api/
+  - https://blog.ouseful.info/2017/09/06/building-a-json-api-using-jupyer-notebooks-in-under-5-minutes/
 
 #### Keywords
 - Swagger - open-source software framework backed by a large ecosystem of tools that helps developers design, build, document, and consume RESTful Web services- https://swagger.io
