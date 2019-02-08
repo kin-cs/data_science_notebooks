@@ -13,3 +13,7 @@ uri = data_csv.uri
 df = pd.read_csv(BytesIO(data), sep='|')
 
 ```
+
+Creating/generating API in GCP
+--------------------------
+- https://cloud.google.com/endpoints/docs/frameworks/python/get-started-frameworks-python
