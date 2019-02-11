@@ -17,3 +17,7 @@ df = pd.read_csv(BytesIO(data), sep='|')
 Creating/generating API in GCP
 --------------------------
 - https://cloud.google.com/endpoints/docs/frameworks/python/get-started-frameworks-python
+
+Datalab
+------
+- the path of datalab content is in: ```/media/root/mnt/disks/datalab-pd/content/datalab```
