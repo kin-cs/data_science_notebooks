@@ -22,9 +22,21 @@ Some API tutorial
 ### Notes:
 - flask’s inbuilt server is not suitable for production as it doesn’t scale well. You’ll need to use a WSGI server to run your flask application. eg. gunicorn, uwsgi.
 
+Issues to consider:
+===
+- Versioning
+- Workload scaling
+- Connection to DB
+- Logging
+- Crashes and recovery / Zero downtime deployment
+- etc.
+
 
 Production Concept
 ===
 
 - High level concept of steps in Production: https://machinelearningmastery.com/deploy-machine-learning-model-to-production/
 
+Ref
+---
+- https://www.youtube.com/watch?v=-UYyyeYJAoQ
