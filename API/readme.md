@@ -24,6 +24,7 @@ Some API tutorial
 
 Issues to consider:
 ===
+- put it in Docker
 - Versioning
 - Workload scaling
 - Connection to DB
