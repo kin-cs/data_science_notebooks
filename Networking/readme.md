@@ -1,0 +1,2 @@
+- Privileged Port (port lower than 1024)
+	- https://www.w3.org/Daemon/User/Installation/PrivilegedPorts.html
