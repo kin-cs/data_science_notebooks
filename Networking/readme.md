@@ -1,2 +1,4 @@
 - Privileged Port (port lower than 1024)
 	- https://www.w3.org/Daemon/User/Installation/PrivilegedPorts.html
+- Internal and External IP address
+	- https://stevessmarthomeguide.com/internal-external-ip-addresses/
