@@ -20,4 +20,4 @@ Creating/generating API in GCP
 
 Datalab
 ------
-- the path of datalab content is: ```/media/root/mnt/disks/datalab-pd/content/datalab```
+- the path of datalab content is: ```/media/root/mnt/disks/datalab-pd/content/datalab``` if in root by toolbox or ```/mnt/disks/datalab-pd/content/datalab``` if directly in its SSH
