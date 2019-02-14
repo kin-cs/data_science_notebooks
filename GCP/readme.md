@@ -21,3 +21,10 @@ Creating/generating API in GCP
 Datalab
 ------
 - the path of datalab content is: ```/media/root/mnt/disks/datalab-pd/content/datalab``` if in root by toolbox or ```/mnt/disks/datalab-pd/content/datalab``` if directly in its SSH
+
+Tips
+---
+- Download file from VM to local:
+  - In GCP console, ssh into the vm and on top right corner there is a settings button, there you will find the download file option just enter the path of file. if it is folder then first zip the folder then download it. [ref](https://stackoverflow.com/questions/44982313/how-to-copy-files-from-google-compute-engine-to-local-directory)
+
+
