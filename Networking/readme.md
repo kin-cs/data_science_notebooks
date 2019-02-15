@@ -12,3 +12,9 @@
 - TCP/IP & Socketing
 	- http://www.steves-internet-guide.com/tcpip-ports-sockets/
 	- A port number uses 16 bits and so can therefore have a value from 0 to 65535 decimal
+- HTTP Responses
+	- 1xx (Informational): The request was received, continuing process
+	- 2xx (Successful): The request was successfully received, understood, and accepted
+	- 3xx (Redirection)
+	- 4xx (Client Error)
+	- 5xx (Server Error)
