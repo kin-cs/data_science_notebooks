@@ -64,9 +64,13 @@ def person_post():
 
 Production Concept
 ===
-
 - High level concept of steps in Production: https://machinelearningmastery.com/deploy-machine-learning-model-to-production/
 
+Using HTTPS (SSL)
+---
+- https://blog.miguelgrinberg.com/post/running-your-flask-application-over-https
+
+----
 Ref
 ---
 - https://www.youtube.com/watch?v=-UYyyeYJAoQ
