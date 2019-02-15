@@ -37,8 +37,6 @@ Error Handling by Flask
 - Easy example: https://flask-restplus.readthedocs.io/en/stable/errors.html
 - Verbose example: http://shzhangji.com/blog/2018/04/07/error-handling-in-restful-api/ 
 
-
-
 Production Concept
 ===
 - High level concept of steps in Production: https://machinelearningmastery.com/deploy-machine-learning-model-to-production/
@@ -47,7 +45,16 @@ Using HTTPS (SSL)
 ---
 - https://blog.miguelgrinberg.com/post/running-your-flask-application-over-https
 
-----
+Snippets:
+===
+- To POST a request in python
+```python
+import requests
+url = 'http://localhost:5000/api'
+r = requests.post(url,json={'exp':1.8,})
+print(r.json())
+```
+
 Ref
 ---
 - https://www.youtube.com/watch?v=-UYyyeYJAoQ
