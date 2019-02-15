@@ -12,4 +12,3 @@
 - TCP/IP & Socketing
 	- http://www.steves-internet-guide.com/tcpip-ports-sockets/
 	- A port number uses 16 bits and so can therefore have a value from 0 to 65535 decimal
-		-
