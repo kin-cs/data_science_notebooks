@@ -23,3 +23,7 @@ FastText
 - Hierarchical Softmax
   - Huffman Coding
 - have n-gram (so it has the order information)
+
+Keywords
+====
+- OOV (Out of Vocabulary)
