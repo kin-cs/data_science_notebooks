@@ -1,3 +1,5 @@
+### In Datalab, reading file from Google Cloud Storage
+
 ```python
 # For reading the data from Cloud Storage
 import google.datalab.storage as storage
@@ -13,6 +15,13 @@ uri = data_csv.uri
 df = pd.read_csv(BytesIO(data), sep='|')
 
 ```
+
+### In Datalab, writing file in GCS 
+after saving it into the datalab's disk, then:
+```python
+!gsutil cp 'text.csv' 'gs://path-to-your-bucket/test.csv'
+```
+
 
 Creating/generating API in GCP
 --------------------------
