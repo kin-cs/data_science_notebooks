@@ -17,11 +17,11 @@ df = pd.read_csv(BytesIO(data), sep='|')
 ```
 
 ### In Datalab, writing file in GCS 
-after saving it into the datalab's disk, then:
+1. after saving it into the datalab's disk, then:
 ```python
 !gsutil cp 'text.csv' 'gs://path-to-your-bucket/test.csv'
 ```
-
+2. using Dask to save it in GCS
 
 Creating/generating API in GCP
 --------------------------
