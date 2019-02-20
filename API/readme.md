@@ -34,7 +34,7 @@ Issues to consider:
 
 Error Handling by Flask
 ===
-- Easy example: https://flask-restplus.readthedocs.io/en/stable/errors.html
+- Easy example, using **werkzeug.exceptions**: https://flask-restplus.readthedocs.io/en/stable/errors.html
 - Verbose example: http://shzhangji.com/blog/2018/04/07/error-handling-in-restful-api/ 
 #### Flask abort()
 - it will handle the error with simple HTTP output. Unlock Werkzeug before using it [link](https://github.com/django-extensions/django-extensions/issues/787)
