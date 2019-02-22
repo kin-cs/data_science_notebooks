@@ -14,6 +14,9 @@ uri = data_csv.uri
 
 df = pd.read_csv(BytesIO(data), sep='|')
 
+# if it's not csv, but pickle, them
+# import pickle
+# df = pickle.load(BytesIO(data))
 ```
 
 ### In Datalab, writing file in GCS 
