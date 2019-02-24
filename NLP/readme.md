@@ -45,6 +45,11 @@
   - Huffman Coding
 - have n-gram (so it has the order information)
 
+## Doc2Vec
+
+## GloVe
+
+- find the co-occurance of the whole corpus
 
 ## CBOW & Skip-gram
 
@@ -54,12 +59,8 @@
 ## Word2Vec
 
 
-## GloVe
 
-- find the co-occurance of the whole corpus
 
-Doc2Vec
--------
 
 
 
