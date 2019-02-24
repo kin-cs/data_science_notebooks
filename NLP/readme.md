@@ -1,15 +1,16 @@
 (incomplete version)
 # Advancements Overview (from the latest)
 
-- OpenAI (2019, Feb) a large-scale unsupervised language model, without task-specific training - *Language Models are Unsupervised Multitask Learners*
-- Facebook (2018, Dec) PyText - *NLP modeling framework built on PyTorch*
-- Google (2018, Oct) Bert - *Pre-training of Deep Bidirectional Transformers for Language Understanding*
-- OpenAI (2018, June): transformers + unsupervised pre-training - *Improving Language Understanding by Generative Pre-Training*
-
+- [2019 Feb] A large-scale unsupervised language model, without task-specific training BY OpenAI - *Language Models are Unsupervised Multitask Learners*
+- Facebook (2018 Dec) PyText - *NLP modeling framework built on PyTorch*
+- Google (2018 Oct) Bert - *Pre-training of Deep Bidirectional Transformers for Language Understanding*
+- OpenAI (2018 Jun): transformers + unsupervised pre-training - *Improving Language Understanding by Generative Pre-Training*
+- Google Transformer (2017, Dec) - *Attention Is All You Need*
+- Google (2013) Word2Vec
 
 # Advancements Details
 
-## BERT
+## BERT (2018 Oct)
 * richly bi-directional
 * with random mask out (~15%)
 * And then make prediction for that masked word
@@ -22,8 +23,12 @@
     1. use **bidirectional** language model (biLM) to learn both word (e.g., syntax and semantics) and linguistic context (i.e., to model polysemy)
     2. produce **multiple word embeddings per single word** for different scenarios
 
-## Word Embedding (Word2Vec)
-1. One trick: Skip-gram
+## Transformer: (Attention Is All You Need, 2017)
+1. Using Self-Attention in encoding
+2. And using Attention in decoding
+
+## Google Word Embedding (Word2Vec) (2013)
+1. skip-gram
 
 
 
@@ -40,7 +45,7 @@
 
 ## CBOW & Skip-gram
 
-- CBOW: windowed-words, predict a word
+- CBOW Continuous Bag-of Words): windowed-words, predict a word
 - Skip-gram: a word, to predict the windowed-words
 
 ## Word2Vec
