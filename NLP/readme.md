@@ -1,12 +1,12 @@
 (incomplete version)
 # Advancements Overview (from the latest)
 
-- [2019 Feb] A large-scale unsupervised language model, without task-specific training BY OpenAI - *Language Models are Unsupervised Multitask Learners*
-- Facebook (2018 Dec) PyText - *NLP modeling framework built on PyTorch*
-- Google (2018 Oct) Bert - *Pre-training of Deep Bidirectional Transformers for Language Understanding*
-- OpenAI (2018 Jun): transformers + unsupervised pre-training - *Improving Language Understanding by Generative Pre-Training*
-- Google Transformer (2017, Dec) - *Attention Is All You Need*
-- Google (2013) Word2Vec
+- A large-scale unsupervised language model, without task-specific training BY OpenAI (2019 Feb) - *Language Models are Unsupervised Multitask Learners*
+- PyText BY Facebook (2018 Dec) - *NLP modeling framework built on PyTorch*
+- Bert BY Google (2018 Oct) - *Pre-training of Deep Bidirectional Transformers for Language Understanding*
+- Transformers + Unsupervised pre-training By OpenAI (2018 Jun)- *Improving Language Understanding by Generative Pre-Training*
+- Transformer by Google (2017 Dec) - *Attention Is All You Need*
+- Word2Vec by Google (start from 2013) - Distributed representations of words and phrases and their compositionality
 
 # Advancements Details
 
@@ -27,7 +27,7 @@
 1. Using Self-Attention in encoding
 2. And using Attention in decoding
 
-## Google Word Embedding (Word2Vec) (2013)
+## Google Word Embedding (Word2Vec) (start from 2013)
 1. skip-gram
 
 
