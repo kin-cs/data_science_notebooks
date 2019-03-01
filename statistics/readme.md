@@ -40,4 +40,4 @@ Statistical models
   - https://datascienceplus.com/generalized-additive-models/
 - Gerneal linear Model
   - Link function
-    - Logit function: the inverse of sigmoid function - a map of probability values from {\displaystyle [0,1]} [0,1] to {\displaystyle [-\infty ,+\infty ]} [-\infty, +\infty]
+    - Logit function: the inverse of sigmoid function - a map of probability values from [0,1] to [-infty, +infty]
