@@ -14,7 +14,7 @@ And these pillars, based on the below values:
   - Focus
   - Courage
   
-## Scrum Events
+## Sprint (Scrum Events)
 
 #### Sprint Plannings (<=8 hrs)
 Create the Sprint Backlog from the Product Backlog
