@@ -51,13 +51,12 @@
 
 - find the co-occurance of the whole corpus
 
-## CBOW & Skip-gram
-
-- CBOW Continuous Bag-of Words): windowed-words, predict a word
-- Skip-gram: a word, to predict the windowed-words
-
 ## Word2Vec
 
+- **Skip-gram**: a word, to predict the windowed-words
+- **CBOW** (Continuous Bag-of Words): using windowed-words to predict a middle word
+- **Subsampling Frequent Words**: reduce the number of frequent words in the windowed-words
+- **Negative sampling**: randomly select just a small number of “negative” words (e.g. 5 words) to update the weights, to reduce the huge amount of updating weights
 
 
 
@@ -67,4 +66,5 @@
 Keywords
 ====
 - Language Modeling: a task of predicting the next word in a sequence of words
+- Polysemy: the coexistence of many possible meaning of a word 
 - OOV (Out of Vocabulary)
