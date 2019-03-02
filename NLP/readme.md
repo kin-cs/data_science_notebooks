@@ -1,7 +1,7 @@
 (incomplete version)
 # Advancements Overview (from the latest)
 
-- A large-scale unsupervised language model, without task-specific training BY OpenAI (2019 Feb) - *Language Models are Unsupervised Multitask Learners*
+- GPT-2: A large-scale unsupervised language model, without task-specific training BY OpenAI (2019 Feb) - *Language Models are Unsupervised Multitask Learners*
 - PyText BY Facebook (2018 Dec) - *NLP modeling framework built on PyTorch*
 - Bert BY Google (2018 Oct) - *Pre-training of Deep Bidirectional Transformers for Language Understanding*
 - Transformers + Unsupervised pre-training By OpenAI (2018 Jun)- *Improving Language Understanding by Generative Pre-Training*
