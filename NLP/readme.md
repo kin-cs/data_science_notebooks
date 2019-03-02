@@ -66,4 +66,5 @@
 
 Keywords
 ====
+- Language Modeling: a task of predicting the next word in a sequence of words
 - OOV (Out of Vocabulary)
