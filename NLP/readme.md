@@ -4,7 +4,7 @@
 - GPT-2: A large-scale unsupervised language model, without task-specific training BY OpenAI (2019 Feb) - *Language Models are Unsupervised Multitask Learners*
 - PyText BY Facebook (2018 Dec) - *NLP modeling framework built on PyTorch*
 - Bert BY Google (2018 Oct) - *Pre-training of Deep Bidirectional Transformers for Language Understanding*
-- Transformers + Unsupervised pre-training By OpenAI (2018 Jun)- *Improving Language Understanding by Generative Pre-Training*
+- GPT: Transformers + Unsupervised pre-training By OpenAI (2018 Jun)- *Improving Language Understanding by Generative Pre-Training*
 - ElMo, Contextualized Embeddings BY AllenNLP (2018 Mar) - *Deep contextualized word representations*
 - CoVe, Contextualized Word Vectors BY Salesforce (2017 Aug) - *Learned in Translation: Contextualized Word Vectors*
 - Transformer by Google (2017 Dec) - *Attention Is All You Need*
@@ -12,12 +12,16 @@
 
 # Advancements Details
 
+## GPT-2
+- larger scale of GPT
+- amazing state-of-the-art results
+
 ## Bert BY Google (2018 Oct)
 * richly bi-directional
 * with random mask out (~15%)
 * And then make prediction for that masked word
 
-## Transformers + Unsupervised pre-training By OpenAI (2018 Jun)
+## GPT: Transformers + Unsupervised pre-training By OpenAI (2018 Jun)
 * use the pre-train transformer’s decoder to build a classifier
 
 ## Context-Aware/Contextualized Embeddings (2017-2018)
