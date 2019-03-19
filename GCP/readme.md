@@ -41,3 +41,8 @@ Tips
   - In GCP console, ssh into the vm and on top right corner there is a settings button, there you will find the download file option just enter the path of file. if it is folder then first zip the folder then download it. [ref](https://stackoverflow.com/questions/44982313/how-to-copy-files-from-google-compute-engine-to-local-directory)
 
 
+## IAM
+- 3 Names: Identity, Role, Resource
+  - Go to your project
+  - Go to IAM
+  - assign the role for your user
