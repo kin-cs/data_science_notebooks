@@ -50,6 +50,13 @@
     - iii. import the image in K8s instance ```docker import image-file.tar image-name-you-want```
    
 ---
+## Docker intro:
+- Cloud-Repository, Image and Container
+  - Cloud-Repository: ~ github repository, store the image in the 3rd party cloud service
+  - Image: all the files and codes in one place
+  - Container: able to read or write, based on the image
+  - The relationship of above 3 concepts are similar to how Git works
+
 ## Some Docker commands:
 
 - list for container: ```docker container ls```, for image ```docker image ls```
