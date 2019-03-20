@@ -1,0 +1,49 @@
+## Kubernetes intro
+
+K8s is a tool for Container Orchestration
+
+---
+## Deploy ML model in K8s Engine in GCP
+
+- Ref: https://medium.com/analytics-vidhya/deploy-your-first-deep-learning-model-on-kubernetes-with-python-keras-flask-and-docker-575dc07d9e76
+- Steps (Docker):
+  - 1. create a Compute Engine instance, allow HTTP(S)
+  - 2. install docker by
+    - i. Login as super user ```$ sudo -s```
+    - ii. install docker ```$ sudo apt-get install docker.io```
+    - iii. test it ```$ docker```
+  - 3. make sure in flask ```app.run(host='0.0.0.0')```
+  - 4. create ```Dockerfile``` file, remember to COPY any files you need into this image
+    - ```
+        FROM python:3.6
+        WORKDIR /app
+        COPY requirements.txt /app
+        ## copy any files you need to this image ##
+        RUN pip install -r ./requirements.txt
+        COPY main.py /app
+        CMD ["python", "main.py"]~
+  - 5. build a docker image: ```sudo docker build -t ml-app:latest .```
+  - 6. run/create the docker container: ```sudo docker run -d -p 8888:8888 ml-app```
+    - check if it's running ```docker ps -a```
+  - 7. Done for Docker! Check it with your HTTP request in another machine (tips: remember to use correct POST/GET for your request)
+- Step (K8s):
+  - 1. (optional) upload the image to Docker Hub
+    - i. create a Docker Hub account
+    - ii. login in your docker's instance```sudo docker login```
+    - iii. tag your image ```sudo docker tag <your image id> <your docker hub name>/<any app name you like>```
+      - check your image id by ```docker image ls``` (not name but id)
+    - iv. push the image```sudo docker push <your docker hub name>/<youre created app name>```
+  - 2. (optional) if you don't push the image to Docker Hub, you need to save the image and send it to K8s instance, and then import it.
+    - i. save the docker image as a file ```docker save <image name> > output-name.tar```
+    - ii. move the file to your K8s instance
+      - in GCP, you can do it in your Docker instance wiht ```gsutil cp 'file-name.tar' 'gs://path-to-your-bucket/file-name.tar'```
+    - iii. import the image in K8s instance ```docker import image-file.tar image-name-you-want```
+   
+---
+## Some Docker commands:
+
+- list for container: ```docker container ls```, for image ```docker image ls```
+- check running container ```docker ps -a```
+- stop/remove the container ```docker stop <container name>```
+- delete any non-running containers ```docker system prune```
+- delete the image ```docker rmi <image name>```
