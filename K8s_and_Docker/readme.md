@@ -47,7 +47,7 @@
     - i. save the docker image as a file ```docker save <image name> > output-name.tar```
     - ii. move the file to your K8s instance
       - in GCP, you can do it in your Docker instance wiht ```gsutil cp 'file-name.tar' 'gs://path-to-your-bucket/file-name.tar'```
-    - iii. go to Kubernetes clusters page, connect your cluster, then import the image in cloudshell with connected K8s cluster ```docker import image-file.tar <image-name-you-want>```
+    - iii. go to Kubernetes clusters page, connect your cluster, then import the image in cloudshell with connected K8s cluster ```docker load < image-file.tar```
   - 3. now we have image, to run it in K8s, do ```kubectl run ml-app --image=<your-image-name> --port 8888```
     - check if it's running by ```kubectl get pods```
   -
