@@ -49,7 +49,7 @@
       - in GCP, you can do it in your Docker instance with ```gsutil cp 'file-name.tar' 'gs://path-to-your-bucket/file-name.tar'```
     - iii. go to Kubernetes clusters page, connect your cluster, in the cloudshell, download the file with ```gsutil cp 'gs://path-to-your-bucket/file-name.tar' 'file-name.tar' ```
     - iv. then import the image in the cloudshell with connected K8s cluster ```docker load < image-file.tar```
-  - 3. now we have image, to run it in K8s, do ```kubectl run ml-app --image=<your-image-name> --port 8888```
+  - 3. now we have image, to run it in K8s, do ```kubectl run ml-app-pod --image=<your-image-name> --port 8888```
     - check if it's running by ```kubectl get pods```, if the STATUS is RUNNING then it's good.
   - 4. expose it to the outside world, ```kubectl expose deployment ml-app-pod --type=LoadBalancer --port 80 --target-port 8888```
     - check if it's working ```kubectl get service```, the EXTERNAL-IP would be shown after a while.
