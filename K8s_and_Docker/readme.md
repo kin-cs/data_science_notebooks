@@ -37,18 +37,20 @@
     - check if it's running ```docker ps -a```
   - 7. Done for Docker! Check it with your HTTP request in another machine (tips: remember to use correct POST/GET for your request)
 - Step (K8s):
-  - 1. (optional) upload the image to Docker Hub
+  - 1. (or 2) upload the image to Docker Hub
     - i. create a Docker Hub account
     - ii. login in your docker's instance```sudo docker login```
     - iii. tag your image ```sudo docker tag <your image id> <your docker hub name>/<any app name you like>```
       - check your image id by ```docker image ls``` (not name but id)
     - iv. push the image```sudo docker push <your docker hub name>/<youre created app name>```
-  - 2. (optional) if you don't push the image to Docker Hub, you need to save the image and send it to K8s instance, and then import it.
+  - 2. (or 1) if you don't push the image to Docker Hub, you need to save the image and send it to K8s instance, and then import it.
     - i. save the docker image as a file ```docker save <image name> > output-name.tar```
     - ii. move the file to your K8s instance
       - in GCP, you can do it in your Docker instance wiht ```gsutil cp 'file-name.tar' 'gs://path-to-your-bucket/file-name.tar'```
-    - iii. import the image in K8s instance ```docker import image-file.tar image-name-you-want```
-   
+    - iii. go to Kubernetes clusters page, connect your cluster, then import the image in cloudshell with connected K8s cluster ```docker import image-file.tar <image-name-you-want>```
+  - 3. now we have image, to run it in K8s, do ```kubectl run ml-app --image=<your-image-name> --port 8888```
+    - check if it's running by ```kubectl get pods```
+  -
 ---
 ## Docker intro:
 - Cloud-Repository, Image and Container
@@ -64,3 +66,7 @@
 - stop/remove the container ```docker stop <container name>```
 - delete any non-running containers ```docker system prune```
 - delete the image ```docker rmi <image name>```
+
+### image: save & load VS container: export & import
+- image, we use ```save``` and ```load```
+- container, we use ```export``` and ```import```
