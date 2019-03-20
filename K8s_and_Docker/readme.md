@@ -1,6 +1,13 @@
 ## Kubernetes intro
 
-K8s is a tool for Container Orchestration
+- K8s is a tool for Container Orchestration
+  - other similar tools: Docker Swarm & ECS (from AWS)
+- it handles mainly [link](https://testdriven.io/blog/running-flask-on-kubernetes/#what-is-container-orchestration):
+  - Horizontal scaling
+  - Zero-downtime deploys
+  - Logging & Monitoring
+- Complimentary tools: GoogleContainerTools [link](https://github.com/GoogleContainerTools), e.g.:
+  - Skaffold: auto updating the image and contain while you are coding.
 
 ---
 ## Deploy ML model in K8s Engine in GCP
