@@ -51,6 +51,10 @@
   - 3. now we have image, to run it in K8s, do ```kubectl run ml-app --image=<your-image-name> --port 8888```
     - check if it's running by ```kubectl get pods```
   -
+  
+## Some K8s commands:
+- Kill everything: ```kubectl delete daemonsets,replicasets,services,deployments,pods,rc --allkubectl delete daemonsets,replicasets,services,deployments,pods,rc --all```
+
 ---
 ## Docker intro:
 - Cloud-Repository, Image and Container
