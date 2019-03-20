@@ -43,17 +43,21 @@
     - iii. tag your image ```sudo docker tag <your image id> <your docker hub name>/<any app name you like>```
       - check your image id by ```docker image ls``` (not name but id)
     - iv. push the image```sudo docker push <your docker hub name>/<youre created app name>```
-  - 2. (or 1) if you don't push the image to Docker Hub, you need to save the image and send it to K8s instance, and then import it.
+  - 2. <NOT WORK YET> (or 1) if you don't push the image to Docker Hub, you need to save the image and send it to K8s instance, and then import it.
     - i. save the docker image as a file ```docker save <image name> > output-name.tar```
-    - ii. move the file to your K8s instance
-      - in GCP, you can do it in your Docker instance wiht ```gsutil cp 'file-name.tar' 'gs://path-to-your-bucket/file-name.tar'```
-    - iii. go to Kubernetes clusters page, connect your cluster, then import the image in cloudshell with connected K8s cluster ```docker load < image-file.tar```
+    - ii. move the file to Google Storage
+      - in GCP, you can do it in your Docker instance with ```gsutil cp 'file-name.tar' 'gs://path-to-your-bucket/file-name.tar'```
+    - iii. go to Kubernetes clusters page, connect your cluster, in the cloudshell, download the file with ```gsutil cp 'gs://path-to-your-bucket/file-name.tar' 'file-name.tar' ```
+    - iv. then import the image in the cloudshell with connected K8s cluster ```docker load < image-file.tar```
   - 3. now we have image, to run it in K8s, do ```kubectl run ml-app --image=<your-image-name> --port 8888```
-    - check if it's running by ```kubectl get pods```
-  -
+    - check if it's running by ```kubectl get pods```, if the STATUS is RUNNING then it's good.
+  - 4. expose it to the outside world, ```kubectl expose deployment ml-app-pod --type=LoadBalancer --port 80 --target-port 8888```
+    - check if it's working ```kubectl get service```, the EXTERNAL-IP would be shown after a while.
+  - 5. DONE!
+    - test it with your HTTP request!
   
 ## Some K8s commands:
-- Kill everything: ```kubectl delete daemonsets,replicasets,services,deployments,pods,rc --allkubectl delete daemonsets,replicasets,services,deployments,pods,rc --all```
+- Kill everything: ```kubectl delete daemonsets,replicasets,services,deployments,pods,rc --all```
 
 ---
 ## Docker intro:
