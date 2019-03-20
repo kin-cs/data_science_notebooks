@@ -26,6 +26,13 @@ df = pd.read_csv(BytesIO(data), sep='|')
 ```
 2. using Dask to save it in GCS
 
+### In any engine, writing file in GCS
+0. Stop the instance first
+1. set that instance to have "READ WRITE" permission in the VM instance details page -> EDIT
+2. start the instance again, and SSH it, then ```rm -rf ~/.gsutil ```
+3. now you can gsutil cp 'text.csv' 'gs://path-to-your-bucket/test.csv'
+
+
 Creating/generating API in GCP
 --------------------------
 - https://cloud.google.com/endpoints/docs/frameworks/python/get-started-frameworks-python
