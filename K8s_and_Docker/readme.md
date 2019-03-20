@@ -9,6 +9,9 @@
 - Complimentary tools: GoogleContainerTools [link](https://github.com/GoogleContainerTools), e.g.:
   - Skaffold: auto updating the image and contain while you are coding.
 
+### Best practice:
+- slim down the image by using the technique **"Multi Stage Builds"**
+
 ---
 ## Deploy ML model in K8s Engine in GCP
 
