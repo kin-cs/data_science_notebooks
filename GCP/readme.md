@@ -30,7 +30,7 @@ df = pd.read_csv(BytesIO(data), sep='|')
 0. Stop the instance first
 1. set that instance to have "READ WRITE" permission in the VM instance details page -> EDIT
 2. start the instance again, and SSH it, then ```rm -rf ~/.gsutil ```
-3. now you can gsutil cp 'text.csv' 'gs://path-to-your-bucket/test.csv'
+3. now you can ```gsutil cp 'text.csv' 'gs://path-to-your-bucket/test.csv'```
 
 
 Creating/generating API in GCP
