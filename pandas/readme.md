@@ -1,8 +1,6 @@
-Pandas
-======
+# Pandas
 
-Freq Use
---------
+## Freq Use
 
 ```python
 import matplotlib.pyplot as plt
@@ -26,10 +24,6 @@ df.query("col_A == 'some_term'")
 
 # using .isin( a_list )
 df['col_A'].isin(a_list_of_terms)
-
-# using 'hello'.replace('o','a')  # replacing the string of o with a
-
-# using 'hello2222'.strip('2')  # return 'hello'
 
 # using in print() function, using argument file=file_object to write in a file
 
@@ -72,6 +66,15 @@ df['some_col'].fillna('new_dummy_cat')
 # Add 2 columns together as 1 new column
 df['new_col'] = df.apply(lambda x : pd.Series(x['col_A'] + x['col_B']), axis=1)
 
+```
+
+## Manipulate the string
+```python
+# replacing the string of o with a
+'hello'.replace('o','a')  # return 'hella'
+
+# strip
+'hello2222'.strip('2')  # return 'hello'
 ```
 
 ## My helper functions
