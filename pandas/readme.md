@@ -69,6 +69,9 @@ df
 df['some_col'] = df['some_col'].cat.add_categories(['new_dummy_cat'])
 df['some_col'].fillna('new_dummy_cat')
 
+# Add 2 columns together as 1 new column
+df['new_col'] = df.apply(lambda x : pd.Series(x['col_A'] + x['col_B']), axis=1)
+
 ```
 
 ## My helper functions
