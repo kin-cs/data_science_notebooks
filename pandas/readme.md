@@ -116,8 +116,13 @@ def change_datatypes(dataframe, to_categ=None, to_float32=None, to_int32=None, t
   
 def skim_df(dataframe, samples=3):
   df_samples = dataframe.sample(samples)
+  col_names = df_samples.columns.tolist()
   df_samples = df_samples.append(pd.DataFrame(dataframe.dtypes, columns=['dtype']).T)
-  df_samples = df_samples.append(dataframe.select_dtypes(['object', 'datetime']).describe())
-  df_samples = df_samples.append(dataframe.select_dtypes(['number']).describe())
-  return df_samples
+  data_types = ['object', 'category', 'datetime', 'number']
+  for i in data_types:
+    try:
+      df_samples = df_samples.append(dataframe.select_dtypes([i]).describe())
+    except:
+      pass
+  return df_samples[col_names]
 ```
