@@ -99,15 +99,11 @@ def value_counts(df_column, dropna=False):
   df_column.value_counts(dropna=dropna).plot(kind='bar')
   
 def change_datatypes(dataframe, to_categ=None, to_float32=None, to_int32=None, to_dt=None, datetime_fmt="%Y-%m-%d"):
-  if to_categ:
-    for i in to_categ:
-      dataframe[i] = dataframe[i].astype('category')
-  if to_float32:
-    for i in to_float32:
-      dataframe[i] = dataframe[i].astype('float32')
-  if to_int32:
-    for i in to_int32:
-      dataframe[i] = dataframe[i].astype('int32')
+  dtypes_list = [(to_categ, 'category'), (to_float32, 'float32'), (to_int32, 'int32')]
+  for a_list, data_type in dtypes_list:  
+    if a_list:
+      for i in a_list:
+        dataframe[i] = dataframe[i].astype(data_type)
   if to_dt:
     for i in to_dt:
       dataframe[i] = pd.to_datetime(dataframe[i], format=datetime_fmt)
