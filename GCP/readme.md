@@ -55,5 +55,5 @@ Tips
   - assign the role for your user
 
 ## K8s Engine
-- Stop the cluster in K8s Engine
+- Stop the cluster in K8s Engine (for nodes >= 3)
   - ```gcloud container clusters resize $CLUSTER --size=0 --zone=$ZONE```
