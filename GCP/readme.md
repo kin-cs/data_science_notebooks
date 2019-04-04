@@ -53,3 +53,7 @@ Tips
   - Go to your project
   - Go to IAM
   - assign the role for your user
+
+## K8s Engine
+- Stop the cluster in K8s Engine
+  - ```gcloud container clusters resize $CLUSTER --size=0 --zone=$ZONE```
