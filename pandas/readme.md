@@ -75,6 +75,9 @@ df['new_col'] = df.apply(lambda x : pd.Series(x['col_A'] + x['col_B']), axis=1)
 
 # strip
 'hello2222'.strip('2')  # return 'hello'
+
+# check if any characters in a string
+any(c.isalpha() for c in a_string)
 ```
 
 ## My helper functions
