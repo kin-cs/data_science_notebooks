@@ -125,5 +125,6 @@ def skim_df(dataframe, samples=3):
 
 ## Advanced
 
-### Using **Ufuncs** in groupby (e.g. .diff, .shift, .cumsum, .cumcount, .str commands, .dt commands)
+### Using Ufuncs in groupby
+(e.g. .diff, .shift, .cumsum, .cumcount, .str commands, .dt commands)
 - https://towardsdatascience.com/pandas-tips-and-tricks-33bcc8a40bb9
