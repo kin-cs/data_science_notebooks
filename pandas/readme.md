@@ -132,7 +132,7 @@ def skim_df(dataframe, samples=3):
 (e.g. .diff, .shift, .cumsum, .cumcount, .str commands, .dt commands)
 - https://towardsdatascience.com/pandas-tips-and-tricks-33bcc8a40bb9
 
-### Using Modin by UC berkley to speed up Pandas
+### Using Modin to speed up Pandas
 - ```pip install modin```
 ```python
 # import pandas as pd
