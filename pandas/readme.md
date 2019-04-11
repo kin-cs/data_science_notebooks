@@ -72,9 +72,14 @@ df['new_col'] = df.apply(lambda x : pd.Series(x['col_A'] + x['col_B']), axis=1)
 ```python
 # replacing the string of o with a
 'hello'.replace('o','a')  # return 'hella'
+# In pandas
+df['col_A'].str.replace('o','a')
+
 
 # strip
 'hello2222'.strip('2')  # return 'hello'
+# In pandas
+df['col_A'].str.strip('2')
 
 # check if any characters in a string
 any(c.isalpha() for c in a_string)
