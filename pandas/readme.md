@@ -140,8 +140,8 @@ def check_diff_type_in_a_col(series):
   print('Float type: ', len(float_list))
   print('Nan type: ', len(nan_list))
   sum_of_all = len(str_list) + len(int_list) + len(float_list) + len(nan_list)
-  print('Total rows of this column is: ', len(df_cover_w_hq))
-  print('Check if total rows are matched with above datatypes: ', sum_of_all == len(df_cover_w_hq))
+  print('Total rows of this column is: ', len(series))
+  print('Check if total rows are matched with above datatypes: ', sum_of_all == len(series))
 ```
 
 ## Advanced
