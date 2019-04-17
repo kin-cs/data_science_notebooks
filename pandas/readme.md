@@ -164,5 +164,5 @@ import modin.pandas as pd
 
 ## Data Science Checklist Manifesto:
 - [ ] Drop Duplicate ```drop_duplicates()```
-        - **use the dataframe's function, not series function: ```df.drop_duplicates(['a_col'], inplace=True)```
+        - **use the dataframe's function**, not series function: ```df.drop_duplicates(['a_col'], inplace=True)```
         - decide to keep first or last
