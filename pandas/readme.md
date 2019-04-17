@@ -136,12 +136,17 @@ def check_diff_type_in_a_col(series):
   float_list = [x for x in series.tolist() if isinstance(x, float)]
   nan_list = [0 for x in series.tolist() if pd.isnull(x)]
   print('String type: ', len(str_list))
+  print('examples: {}\n========'.format(str_list[0:3]))
   print('Int type: ', len(int_list))
+  print('examples: {}\n========'.format(int_list[0:3]))
   print('Float type: ', len(float_list))
+  print('examples: {}\n========'.format(float_list[0:3]))
   print('Nan type: ', len(nan_list))
+  print('===============')
   sum_of_all = len(str_list) + len(int_list) + len(float_list) + len(nan_list)
   print('Total rows of this column is: ', len(series))
   print('Check if total rows are matched with above datatypes: ', sum_of_all == len(series))
+  print('============ DONE ============')
 ```
 
 ## Advanced
@@ -156,3 +161,7 @@ def check_diff_type_in_a_col(series):
 # import pandas as pd
 import modin.pandas as pd
 ```
+
+## Data Science Checklist Manifesto:
+[ ] Drop Duplicate ```drop_duplicates()```
+        - decide to keep first or last
