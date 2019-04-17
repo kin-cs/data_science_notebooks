@@ -30,6 +30,9 @@ df['col_A'].isin(a_list_of_terms)
 # checking NaN and return Boolean
 df['col_A'].isnull() 
 
+# convert the string, int, float mixed "object datatype" series as 10-digit string, padding with 0 in front.
+df['col_A'].apply(lambda x: int(x) if isinstance(x, float) else x).apply(lambda x: str(x).zfill(10))
+
 # making bins columns
 age_bins = np.arange(0, 80, 5)
 pd.cut(df['col_age'], age_bins, right=False)
