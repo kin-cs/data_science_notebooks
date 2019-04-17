@@ -129,6 +129,19 @@ def skim_df(dataframe, samples=3):
     except:
       pass
   return df_samples[col_names]
+  
+def check_diff_type_in_a_col(series):
+  str_list = [x for x in series.tolist() if isinstance(x, str)]
+  int_list = [x for x in series.tolist() if isinstance(x, int)]
+  float_list = [x for x in series.tolist() if isinstance(x, float)]
+  nan_list = [0 for x in series.tolist() if pd.isnull(x)]
+  print('String type: ', len(str_list))
+  print('Int type: ', len(int_list))
+  print('Float type: ', len(float_list))
+  print('Nan type: ', len(nan_list))
+  sum_of_all = len(str_list) + len(int_list) + len(float_list) + len(nan_list)
+  print('Total rows of this column is: ', len(df_cover_w_hq))
+  print('Check if total rows are matched with above datatypes: ', sum_of_all == len(df_cover_w_hq))
 ```
 
 ## Advanced
