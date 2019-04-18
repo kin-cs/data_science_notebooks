@@ -147,8 +147,8 @@ def check_diff_type_in_a_col(series):
   print('Nan type: ', len(nan_list))
   print('===============')
   sum_of_all = len(str_list) + len(int_list) + len(float_list) + len(nan_list)
-  print('Total rows of this column is: ', len(series))
-  print('Check if total rows are matched with above datatypes: ', sum_of_all == len(series))
+  print('Total rows of this column w/ NaN is: ', len(series) + len(nan_list))
+  print('Check if total rows are matched with above datatypes: ', sum_of_all == (len(series)+len(nan_list)))
   print('============ DONE ============')
 ```
 
