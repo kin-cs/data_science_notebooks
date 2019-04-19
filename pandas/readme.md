@@ -131,7 +131,7 @@ def skim_df(dataframe, samples=3):
       df_samples = df_samples.append(dataframe.select_dtypes([i]).describe())
     except:
       pass
-  return df_samples[col_names]
+  return df_samples[col_names].groupby(level=0).first()
   
 def check_diff_type_in_a_col(series):
   str_list = [x for x in series.tolist() if isinstance(x, str)]
