@@ -150,6 +150,10 @@ def check_diff_type_in_a_col(series):
   print('Total rows of this column w/ NaN is: ', len(series) + len(nan_list))
   print('Check if total rows are matched with above datatypes: ', sum_of_all == (len(series)+len(nan_list)))
   print('============ DONE ============')
+
+def describe_nice(df):
+  with pd.option_context('float_format', '{:.2f}'.format):
+    print(df.describe())
 ```
 
 ## Advanced
